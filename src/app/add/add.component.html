@@ -1,0 +1,25 @@
+<div class="container-fluid">
+<div class="row">
+<div class="col">
+    <h2 class="text-primary">Add product</h2>
+    <label for="name"class="form-label">Name</label>
+    <input type="text" id="name"  class="form-control" [(ngModel)]="name" >
+
+    <label for="designation"class="form-label">Desigation</label>
+    <input type="text" id="designation" placeholder="Enter designation"[(ngModel)]="designation" class="form-control">
+   
+</div>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <label for="price"class="form-label">Price</label>
+        <input type="number" id="price" placeholder="MAD"[(ngModel)]="price" class="form-control">
+    </div>
+</div>
+<div class="row mt-2">
+    <div class="col-md-6">
+       <button class="btn btn-primary"(click)="onAdd()">Add</button>
+    </div>
+</div>
+
+</div>
